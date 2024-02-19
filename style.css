@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #d9d9d9;
+    background-color: #000;
+    background-image: url('space-background.jpg'); /* Replace with your own space-themed background */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#navbar {
+    background-color: #202020;
+    opacity: 0.9;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar li {
+    float: left;
+}
+
+#navbar li a {
+    display: block;
+    color: #d9d9d9;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.5s;
+}
+
+#navbar li a:hover {
+    background-color: #575757;
+}
+
+.nav-button {
+    border: 1px solid #555; /* subtle border for buttons */
+    background-color: transparent;
+}
+
+.hero-section {
+    padding: 100px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    color: #e6e6e6;
+    font-size: 2.5rem;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #202020;
+    color: #d9d9d9;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
