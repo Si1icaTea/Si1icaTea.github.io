@@ -71,3 +71,9 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
+.section {
+    padding-top: 100px; /* Adjust based on your navbar's height */
+    margin-top: -100px; /* Same value as padding-top but negative */
+    display: block;
+}
