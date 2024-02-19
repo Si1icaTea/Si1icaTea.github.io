@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Orbitron', sans-serif;
-    color: #d9d9d9;
+    color: #ffffff;
     background-color: #000;
     background-image: url('SkyBack2.png'); /* Replace with your own space-themed background */
     background-size: cover;
@@ -11,7 +11,7 @@ body, html {
 }
 
 #navbar {
-    background-color: #202020;
+    background-color: #252331;
     opacity: 0.9;
     position: fixed;
     width: 100%;
@@ -32,7 +32,7 @@ body, html {
 
 #navbar li a {
     display: block;
-    color: #d9d9d9;
+    color: #ffffff;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -40,7 +40,7 @@ body, html {
 }
 
 #navbar li a:hover {
-    background-color: #575757;
+    background-color: #252331;
 }
 
 .nav-button {
@@ -51,10 +51,12 @@ body, html {
 .hero-section {
     padding: 100px;
     text-align: center;
+    background-color: #272750; /* Dark navy blue background */
+    color: #ffffff; /* Light text color for contrast */
 }
 
 .hero-section h1 {
-    color: #e6e6e6;
+    color: #ffffff;
     font-size: 2.5rem;
 }
 
@@ -63,8 +65,8 @@ body, html {
 }
 
 footer {
-    background-color: #202020;
-    color: #d9d9d9;
+    background-color: #20202000;
+    color: #ffffff;
     text-align: center;
     padding: 10px;
     position: fixed;
@@ -73,15 +75,15 @@ footer {
 }
 
 .section {
-    padding-top: 100px; /* Adjust based on your navbar's height */
-    margin-top: -100px; /* Same value as padding-top but negative */
+    padding-top: 50px; /* Adjust based on your navbar's height */
+    margin-top: -50px; /* Same value as padding-top but negative */
     display: block;
 }
 
 .project {
-    margin-bottom: 30px;
-    background-color: #111; /* Dark background for contrast */
-    padding: 20px;
+    margin-bottom: 10px;
+    background-color: #252331; /* Dark background for contrast */
+    padding: 10px;
     border-radius: 5px;
 }
 
@@ -94,9 +96,9 @@ footer {
 }
 
 .project h2 {
-    color: #e6e6e6;
+    color: #ffffff;
 }
 
 .project p {
-    color: #ccc;
+    color: #ffffff;
 }
