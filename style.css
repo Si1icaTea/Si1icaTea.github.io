@@ -67,9 +67,8 @@ body, html {
     background-color: #323e52; /* Dark background for contrast */
     color: #ffffff; /* Light text color for contrast */
     padding: 10px;
-    border-radius: 5px;
-    outline: 2px solid #ffffff; /* White outline */
-    outline-offset: -2px; /* Adjust the offset as needed */
+    outline: 5px solid #ffffff; /* White outline */
+    outline-offset: -1px; /* Adjust the offset as needed */
 }
 
 footer {
@@ -92,7 +91,6 @@ footer {
     margin-bottom: 10px;
     background-color: #323e52; /* Dark background for contrast */
     padding: 10px;
-    border-radius: 5px;
 }
 
 .project-img {
