@@ -48,14 +48,24 @@ body, html {
     background-color: transparent;
 }
 
+.pad-section {
+    padding: 70px;
+    text-align: center;
+}
+
 .hero-section {
-    padding: 100px;
+    padding: 10px;
     text-align: center;
 }
 
 .hero-section h1 {
     color: #ffffff;
     font-size: 2.5rem;
+}
+
+.hero-section h2 {
+    color: #ffffff;
+    font-size: 1.5rem;
 }
 
 .hero-section p {
@@ -124,4 +134,23 @@ footer {
 .download-button:hover {
     background-color: #ffffff; /* White background on hover */
     color: #000000; /* Black text on hover */
+    transform: translateY(-2px); /* Slight raise effect */
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #202020; /* Dark background for contrast */
+    color: #ffffff; /* White text */
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif; /* Assuming Roboto is used throughout the site */
+    border: 4px solid #ffffff; /* White border */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-button:hover, .hero-button:focus {
+    background-color: #ffffff; /* White background on hover */
+    color: #000000; /* Black text on hover */
+    transform: translateY(-2px); /* Slight raise effect */
 }
