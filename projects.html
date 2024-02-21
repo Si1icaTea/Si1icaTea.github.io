@@ -58,5 +58,17 @@
     <footer>
         <!--<p>&copy; 2024 . All rights reserved.</p>-->
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var downloadButtons = document.querySelectorAll('.download-button');
+            downloadButtons.forEach(function(button) {
+                button.addEventListener('click', function(e) {
+                    e.preventDefault(); // Prevents the default action
+                    // Optionally, you can also display a message or perform another action here
+                });
+            });
+        });
+    </script>
+        
 </body>
 </html>
