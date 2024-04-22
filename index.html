@@ -1,51 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
-    <title>Zyramede Interactive</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Zyramede Interactive</title>
 </head>
 <body>
-    <header>
-        <nav id="navbar">
-            <ul>
-                <li><a href="index.html" class="nav-button">Home</a></li>
-                <li><a href="projects.html" class="nav-button">Projects</a></li>
-                <li><a href="work.html" class="nav-button">Work With Us</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home" class="pad-section">
-            <section id="home" class="hero-section">
-                <section id="projects" class="hero-internal">
-                    <h1>Zyramede Interactive</h1>
-                    <p>Beyond the boundries of human.</p>
-                </section>
-            </section>
-            <!-- Additional sections for About, Missions, and Contact could be added here -->
-            <section id="home" class="hero-section">
-                <section id="projects" class="hero-internal">
-                    <h2>Creating New Gaming Experiences</h2>
-                    <p>Zyramede Interactive is a studio focused on assisting writers in creating products for gamers and non-gamers that use the unique benefits of the digital medium.</p>
-                    <a href="projects.html" class="hero-button">Explore Projects</a>
-                    <p></p>
-                </section>
-            </section>
-            <section id="home" class="hero-section">
-                <section id="projects" class="hero-internal">
-                    <h2>Work With Us</h2>
-                    <p>At Zyramede Interactive we are open to assisting writers and artists who want to create projects that push the boundries of traditional media.</p>
-                    <a href="work.html" class="hero-button">Work With Us</a>
-                    <p> </p>
-                </section>
-            </section>
-        </section>
-    </main>
-    <footer>
-        <!--<p>&copy; 2024 . All rights reserved.</p>-->
-    </footer>
+
+    <audio id="click-sound" src="sounds/click.mp3" preload="auto"></audio>
+    <audio id="hover-sound" src="path_to_your_hover_sound.mp3" preload="auto"></audio>
+    <audio id="nav-click-sound" src="sounds/click.mp3" preload="auto"></audio>
+    <audio id="nav-hover-sound" src="path_to_nav_hover_sound.mp3" preload="auto"></audio>
+  
+
+<div id="wrapper">
+  <div id="header">Zyramede Interactive</div>
+  <div id="container">
+    <div id="navbar">
+      <ul class="nav-list">
+        <li id="home" class="nav-item active" onclick="updateContent('home')" onmouseover="playSound('nav-hover-sound')" onclick="playSound('nav-click-sound')" >Home</li>
+        <li id="projects" class="nav-item" onclick="updateContent('projects')" onmouseover="playSound('nav-hover-sound')" onclick="playSound('nav-click-sound')">Projects</li>
+        <li id="work" class="nav-item" onclick="updateContent('work')" onmouseover="playSound('nav-hover-sound')" onclick="playSound('nav-click-sound')">Work With Us</li>
+      </ul>
+    </div>
+    <div id="divider"></div>
+    <div id="content">
+      <!-- Default content for Home will be loaded here -->
+      <h1>Welcome to Zyramede Interactive</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,143 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #wrapper {
+    border: 2px solid white;
+    width: 60vw;
+  }
+  
+  #header {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    border-bottom: 2px solid white;
+  }
+
+  h2 {
+    font-size: 1.3em; /* Adjust size as needed, larger than body text */
+    font-weight: normal; /* Unbold the font */
+    margin: 10px 0; /* Add some margin for spacing if needed */
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .full-width-button {
+    display: block; /* Makes the button a block element */
+    width: 100%; /* Sets the button width to be 100% of its parent container */
+    padding: 15px 0; /* Adds padding above and below the text */
+    margin: 10px 0; /* Adds margin above and below the button */
+    background-color: rgb(0, 0, 0); /* Button background color */
+    color: rgb(255, 255, 255); /* Button text color */
+    border: 2px solid white; /* Border to match the overall design */
+    cursor: pointer; /* Changes the mouse cursor to indicate it's clickable */
+    font-size: 1em; /* Sets the font size of the button text */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+  }
+  
+  .full-width-button:hover {
+    background-color: rgb(20, 20, 20); /* Changes background on hover */
+    color: white; /* Changes text color on hover */
+  }
+  
+  #container {
+    display: flex;
+    width: 100%; /* Take full width of the wrapper */
+    height: 70vh; /* Adjust height as required */
+  }
+  
+  #navbar {
+    width: calc(50% - 1px); /* Adjust for the divider */
+    background-color: #000;
+    border-right: 2px solid white;
+    box-sizing: border-box;
+  }
+  
+  .nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .nav-item {
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+    border-bottom: 2px solid white;
+  }
+  
+  .nav-item:hover {
+    background-color: rgb(20, 20, 20);
+  }
+
+  .nav-item.active {
+    color: black; 
+    background-color: rgb(255, 255, 255);
+  }
+  
+  #divider {
+    display: none; /* Since we already have a border, we don't need the divider */
+  }
+  
+  #content {
+    width: calc(50% - 1px); /* Adjust for the border */
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  /* Custom scrollbar styles */
+  #content::-webkit-scrollbar, .nav-list::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  #content::-webkit-scrollbar-track, .nav-list::-webkit-scrollbar-track {
+    background: #000;
+  }
+  
+  #content::-webkit-scrollbar-thumb, .nav-list::-webkit-scrollbar-thumb {
+    background: #555;
+  }
+  
+  #content::-webkit-scrollbar-thumb:hover, .nav-list::-webkit-scrollbar-thumb:hover {
+    background: #888;
+  }
+
+  /* Styles for the scrollbar track (background) */
+::-webkit-scrollbar {
+    width: 12px; /* Width of the scrollbar */
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+  
+  /* Styles for the scrollbar thumb (the part that you drag) */
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(white, white); /* Makes the thumb white with a gradient effect */
+    border-radius: 6px; /* Optional: Rounds the corners of the scrollbar thumb */
+    border: 3px solid black; /* Border to match the one in the image */
+  }
+  
+  /* Styles for the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: black; /* Background color of the scrollbar track */
+    border-radius: 6px; /* Optional: Rounds the corners of the scrollbar track */
+    box-shadow: inset 0 0 10px #000000; /* Optional: Adds some shadow inside the track */
+  }
+  
